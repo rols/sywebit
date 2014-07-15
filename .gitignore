@@ -3,10 +3,7 @@ exports/
 logs/
 sywebit.antlr4/target/classes/*
 sywebit.antlr4/target/maven-archiver/*
-sywebit.webapp/target/.*
-sywebit.webapp/target/maven-archiver/*
-sywebit.webapp/target/*.war
-sywebit.webapp/target/sywebit*
+sywebit.webapp/target/*
 target/generated-sources/annotations/*
 target/maven-archiver/*
 target/surefire/*
