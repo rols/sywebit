@@ -1,8 +1,9 @@
 bin/
 exports/
 logs/
+target/classes/*
 target/generated-sources/annotations/*
-target/maven-archiver/*
+target/maven-archiver/pom.properties
 target/surefire/*
 target/*.jar
 target/*.war
