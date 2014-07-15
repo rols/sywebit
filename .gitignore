@@ -1,7 +1,8 @@
 bin/
 exports/
 logs/
-target/classes/*
+sywebit.antlr4/target/classes/*
+sywebit.antlr4/target/maven-archiver/*
 target/generated-sources/annotations/*
 target/maven-archiver/pom.properties
 target/surefire/*
