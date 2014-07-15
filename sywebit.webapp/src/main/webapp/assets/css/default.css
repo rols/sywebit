@@ -1,6 +1,22 @@
 .error {
 	color: red;
 }
+
 .success {
 	color: green;
+}
+
+#entry_text_area {
+	width: 800px;
+	height: 150px;
+	max-width: 800px;
+	min-width: 800px;
+}
+
+#server_message {
+	position: absolute;
+	width: 800px;
+	height: 150px;
+	border: 1px solid #000;
+	overflow: scroll;
 }
