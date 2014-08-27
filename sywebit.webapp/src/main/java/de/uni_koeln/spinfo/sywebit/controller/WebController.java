@@ -31,7 +31,13 @@ public class WebController {
 	}
 
 	@RequestMapping(value = "/editor/validate", method = RequestMethod.POST, produces = { "application/json" })
-	public @ResponseBody AntlrValidationResponse validate(@RequestParam String entry,
+	public @ResponseBody AntlrValidationResponse validatePost(@RequestParam String entry,
+			HttpServletRequest request, HttpServletResponse response) {
+		return antlr.processEntry(entry);
+	}
+	
+	@RequestMapping(value = "/editor/validate", method = RequestMethod.GET, produces = { "application/json" })
+	public @ResponseBody AntlrValidationResponse validateGet(@RequestParam String entry,
 			HttpServletRequest request, HttpServletResponse response) {
 		return antlr.processEntry(entry);
 	}
