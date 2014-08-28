@@ -9,6 +9,9 @@ import org.antlr.v4.runtime.BaseErrorListener;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.RecognitionException;
 import org.antlr.v4.runtime.Recognizer;
+import org.apache.commons.lang3.StringEscapeUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import de.uni_koeln.spinfo.antlr4.webGrammarLexer;
@@ -17,6 +20,8 @@ import de.uni_koeln.spinfo.sywebit.antlr.response.AntlrValidationResponse;
 
 @Service
 public class Antlr4WebEdit {
+
+	Logger logger = LoggerFactory.getLogger(getClass());
 
 	public AntlrValidationResponse processEntry(final String input) {
 
@@ -86,7 +91,9 @@ public class Antlr4WebEdit {
 		}
 
 		private void setErrorMessage(String errorMessage) {
-			this.errorMessages.add(errorMessage);
+			logger.info("errorMessage {} ", errorMessage);
+			String escapeHtml = StringEscapeUtils.escapeHtml4(errorMessage);
+			this.errorMessages.add(escapeHtml);
 		}
 
 		public List<String> getErrorMessages() {
