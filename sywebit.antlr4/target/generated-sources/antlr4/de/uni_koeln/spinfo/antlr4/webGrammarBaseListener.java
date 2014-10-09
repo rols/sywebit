@@ -1,4 +1,4 @@
-// Generated from de/uni_koeln/spinfo/antlr4/webGrammar.g4 by ANTLR 4.2.2
+// Generated from de\u005Cuni_koeln\spinfo\antlr4\webGrammar.g4 by ANTLR 4.2.2
 package de.uni_koeln.spinfo.antlr4;
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -17,6 +17,58 @@ public class webGrammarBaseListener implements webGrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterQs(@NotNull webGrammarParser.QsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitQs(@NotNull webGrammarParser.QsContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAlternat(@NotNull webGrammarParser.AlternatContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAlternat(@NotNull webGrammarParser.AlternatContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPos(@NotNull webGrammarParser.PosContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPos(@NotNull webGrammarParser.PosContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNomen(@NotNull webGrammarParser.NomenContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNomen(@NotNull webGrammarParser.NomenContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterStartSymb(@NotNull webGrammarParser.StartSymbContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -30,26 +82,91 @@ public class webGrammarBaseListener implements webGrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDot(@NotNull webGrammarParser.DotContext ctx) { }
+	@Override public void enterVerb(@NotNull webGrammarParser.VerbContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDot(@NotNull webGrammarParser.DotContext ctx) { }
+	@Override public void exitVerb(@NotNull webGrammarParser.VerbContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterWord(@NotNull webGrammarParser.WordContext ctx) { }
+	@Override public void enterQsLemma(@NotNull webGrammarParser.QsLemmaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitWord(@NotNull webGrammarParser.WordContext ctx) { }
+	@Override public void exitQsLemma(@NotNull webGrammarParser.QsLemmaContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterError(@NotNull webGrammarParser.ErrorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitError(@NotNull webGrammarParser.ErrorContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterVerbstamm(@NotNull webGrammarParser.VerbstammContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitVerbstamm(@NotNull webGrammarParser.VerbstammContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStem(@NotNull webGrammarParser.StemContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStem(@NotNull webGrammarParser.StemContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterKonjugation(@NotNull webGrammarParser.KonjugationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitKonjugation(@NotNull webGrammarParser.KonjugationContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEndEntry(@NotNull webGrammarParser.EndEntryContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEndEntry(@NotNull webGrammarParser.EndEntryContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
